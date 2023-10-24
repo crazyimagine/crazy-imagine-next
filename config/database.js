@@ -50,11 +50,11 @@ module.exports = ({ env }) => {
     postgres: {
       connection: {
         connectionString: env('DATABASE_URL'),
-        host: env('DATABASE_HOST', 'localhost'),
+        host: env('DATABASE_HOST', 'dpg-cks0oag5vl2c73cb948g-a.oregon-postgres.render.com'),
         port: env.int('DATABASE_PORT', 5432),
-        database: env('DATABASE_NAME', 'strapi-prueba'),
-        user: env('DATABASE_USERNAME', 'postgres'),
-        password: env('DATABASE_PASSWORD', '19981129da'),
+        database: env('DATABASE_NAME', 'strapi_wiy7'),
+        user: env('DATABASE_USERNAME', 'admin'),
+        password: env('DATABASE_PASSWORD', 'ltSALPEhSQPZzCyxilj6cPOoqEY6bqaK'),
         ssl: env.bool('DATABASE_SSL', false) && {
           key: env('DATABASE_SSL_KEY', undefined),
           cert: env('DATABASE_SSL_CERT', undefined),
